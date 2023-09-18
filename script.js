@@ -1,6 +1,7 @@
 console.groupCollapsed('pirma uzduotis password')
 
-let password= 'kokokokfyftfyvyvvvyu'
+let password='kokokfbohi' 
+let passwordSymbol='?=.*[#]'
 console.log(password)
 console.log(password.length)
 
@@ -21,7 +22,7 @@ console.log(years)
 if(years<0) {
     console.log('amzius netinkamas')
 }
-if(years<6){
+if(years>0 && years<6 ){
     console.log('i mokykla neina')
 }
 if(years>=7 && years<=10) {
@@ -36,7 +37,10 @@ if(years>=15 && years <=18) {
 if(years>=19) {
     console.log('mokykla baiges')
 }
-else {
+if (years>120) {
+    console.log ('amzius per didelis')
+}
+else{
     console.log ('netinkamai nurodytas amzius, amzius privalo buti skaicius')
 }
 console.groupEnd()
